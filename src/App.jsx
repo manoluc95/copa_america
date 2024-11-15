@@ -1,0 +1,38 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Container } from "@mui/material";
+import Navbar from "./components/navbar/Navbar.jsx";
+import Home from "./views/Home.jsx"; 
+import CopaAmerica from "./views/CopaAmerica.jsx";
+import Galeria from "./views/Galeria.jsx"
+
+const navArrayLinks = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "Copa America",
+    path: "/copa_america",
+  },
+  {
+    title: "Galeria",
+    path: "/galeria",
+  }
+];
+
+function App() {
+  return (
+    <Router>
+      <Navbar navArrayLinks={navArrayLinks} />
+      <Container sx={{ mt: 5 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/copa_america" element={<CopaAmerica />} />
+          <Route path="/galeria" element={<Galeria />} />
+        </Routes>
+      </Container>
+    </Router>
+  );
+}
+
+export default App;
