@@ -6,3 +6,12 @@ npm run dev
 abri otro terminal para front
 npm install
 npm run dev
+
+esto es solo la primera ves 
+ya despues seria
+
+cd back
+npm run dev 
+
+en otra terminal 
+npm run dev

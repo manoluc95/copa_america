@@ -22,7 +22,7 @@ export default function Navbar({ navArrayLinks }) {
       <AppBar position="fixed" sx={{ bgcolor: "rgb(116, 172, 223, 0.5)" }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box display="flex" alignItems="center">
-            <img src="/img/afa1.jpg" alt="AFA Logo" style={{ height: "40px", marginLeft: "10px" }} />
+            <img src="/img/ESCUDO.png" alt="AFA Logo" style={{ height: "40px", marginLeft: "10px" }} />
           </Box>
           <Box>
             <IconButton color="inherit" size="large" onClick={() => setOpen(true)} edge="start">
@@ -31,9 +31,6 @@ export default function Navbar({ navArrayLinks }) {
             <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
               <MenuItem onClick={() => { navigate("/copa_america"); handleMenuClose(); }}>
                 Copa América
-              </MenuItem>
-              <MenuItem onClick={() => { navigate("/jugadores/Argentina"); handleMenuClose(); }}>
-                Sobre los jugadores
               </MenuItem>
             </Menu>
           </Box>

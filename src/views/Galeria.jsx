@@ -20,7 +20,7 @@ const Galeria = () => {
             sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
                 <Grid container spacing={4} 
                 marginTop= {4}
-                sx={{ width: "80%", justifyContent: "center" }}>
+                sx={{ width: "90%", justifyContent: "center" }}>
                     {jugadoresArgentina.map((jugador, index) => (
                         <Grid item xs={12} sm={6} md={3} key={index}>
                             <Card onClick={() => handleOpen(jugador)} sx={{ cursor: "pointer", height: "100%" }}>
