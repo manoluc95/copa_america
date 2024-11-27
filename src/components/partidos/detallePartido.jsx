@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Box, Typography, Card, CardMedia, CardContent, Grid } from "@mui/material";
 import { partidos } from "./partidos";
-import { jugadoresArgentina } from "../jugadores/Argentina";
+import { jugadoresArgentina } from "../jugadores/Argentina"; // jugadores de argentina
 
 const DetallePartido = () => {
     const { id } = useParams();
