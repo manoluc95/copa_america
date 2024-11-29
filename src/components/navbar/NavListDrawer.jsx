@@ -9,11 +9,11 @@ export default function NavListDrawer({ navArrayLinks, NavLink, setOpen }) {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'left',
+        alignItems: 'center',
         paddingTop: '20px',
       }}
     >
-      <img src="afa.jpg" alt="AFA Logo" style={{ height: '80px', marginBottom: '10px' }} />
+      <img src="/public/img/ESCUDO.png" alt="AFA Logo" style={{ height: '100px' ,  marginBottom: '20px' }} />
 
       <nav>
         <List>
